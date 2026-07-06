@@ -1,0 +1,17 @@
+{
+  "name": "portafolio_cesia",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "glob": "^13.0.6",
+    "less": "^4.6.7",
+    "vite": "^8.1.3",
+    "vite-plugin-purgecss": "^0.2.13"
+  }
+}

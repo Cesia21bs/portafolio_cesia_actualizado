@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portafolio de Cesia Barrientos — Estudiante de Ingeniería en Ciencias de la Computación en UNICAH. Diseño web, desarrollo digital e innovación tecnológica.">
+  <title>Cesia Barrientos | Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ───── CURSOR GLOW ───── -->
+  <div id="cursor-glow"></div>
+
+  <!-- ───── NAV ───── -->
+  <nav id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo" id="nav-logo-link">CB<span class="dot">.</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="#sobre-mi" id="nav-sobre">Sobre mí</a></li>
+        <li><a href="#habilidades" id="nav-habilidades">Habilidades</a></li>
+        <li><a href="#proyectos" id="nav-proyectos">Proyectos</a></li>
+        <li><a href="#contacto" id="nav-contacto">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="#sobre-mi" id="mob-sobre">Sobre mí</a>
+      <a href="#habilidades" id="mob-habilidades">Habilidades</a>
+      <a href="#proyectos" id="mob-proyectos">Proyectos</a>
+      <a href="#contacto" id="mob-contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- ───── HERO ───── -->
+  <section id="inicio" class="hero" aria-labelledby="hero-heading">
+    <div class="hero-bg-orbs" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting animate-in" style="--delay:0s">Hola, soy</p>
+        <h1 id="hero-heading" class="hero-name animate-in" style="--delay:.1s">
+          Cesia<br><span class="accent">Barrientos</span>
+        </h1>
+        <div class="hero-role animate-in" style="--delay:.2s">
+          <span id="typed-role"></span><span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-bio animate-in" style="--delay:.3s">
+          Estudiante de <strong>Ingeniería en Ciencias de la Computación</strong> en UNICAH.
+          Apasionada por el diseño web y el desarrollo digital innovador.
+        </p>
+        <div class="hero-ctas animate-in" style="--delay:.4s">
+          <a href="#proyectos" class="btn btn-primary" id="hero-ver-proyectos">Ver Proyectos</a>
+          <a href="#contacto" class="btn btn-outline" id="hero-contactar">Contactarme</a>
+        </div>
+        <div class="hero-social animate-in" style="--delay:.5s">
+          <a href="https://github.com/Cesia21bs" target="_blank" rel="noopener" id="hero-github"
+            aria-label="GitHub de Cesia">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .321.216.694.825.576C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/cesia.barrientosss/" target="_blank" rel="noopener" id="hero-instagram"
+            aria-label="Instagram de Cesia">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <a href="https://wa.me/50495970374" target="_blank" rel="noopener" id="hero-whatsapp"
+            aria-label="WhatsApp de Cesia">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrap animate-in" style="--delay:.3s">
+        <div class="hero-img-ring">
+          <img src="img/IMG_7960 copia.png" alt="Foto de Cesia Barrientos" class="hero-img" id="hero-photo"
+            loading="eager">
+        </div>
+        <div class="floating-badge badge-1" aria-hidden="true">💻 Diseño Web</div>
+        <div class="floating-badge badge-2" aria-hidden="true">UNICAH</div>
+      </div>
+    </div>
+    <a href="#sobre-mi" class="scroll-indicator" id="scroll-down-arrow" aria-label="Desplazarse hacia abajo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M12 5v14M5 12l7 7 7-7" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- ───── SOBRE MÍ ───── -->
+  <section id="sobre-mi" class="section" aria-labelledby="sobre-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — Sobre mí</span>
+        <h2 id="sobre-heading" class="section-title">¿Quién soy?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hola, soy <strong>Cesia Barrientos</strong>, estudiante de la carrera de
+            <strong>Ingeniería en Ciencias de la Computación</strong> en UNICAH.
+            Me apasiona el diseño web y actualmente me encuentro fortaleciendo mis conocimientos
+            y habilidades dentro de mi formación profesional, especialmente en el área de
+            diseño y desarrollo digital.
+          </p>
+          <p>
+            Me interesa crear sitios web <strong>innovadores, funcionales</strong> y alineados
+            con las tendencias actuales, buscando siempre aprender, mejorar y crecer
+            profesionalmente para aportar soluciones creativas y de calidad.
+          </p>
+          <div class="about-chips">
+            <span class="chip">UNICAH</span>
+            <span class="chip">Innovación</span>
+            <span class="chip">Diseño Web</span>
+            <span class="chip">Desarrollo Digital</span>
+            <span class="chip">Honduras</span>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card" id="stat-proyectos">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">Proyectos</div>
+          </div>
+          <div class="stat-card" id="stat-repos">
+            <div class="stat-number" data-target="2">0</div>
+            <div class="stat-label">Repos GitHub</div>
+          </div>
+          <div class="stat-card" id="stat-pasion">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Pasión</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── HABILIDADES ───── -->
+  <section id="habilidades" class="section section-alt" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Habilidades</span>
+        <h2 id="skills-heading" class="section-title">Tech Stack</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">🎨</span> Frontend
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item" id="skill-html">
+              <div class="skill-info"><span>HTML5</span><span>85%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item" id="skill-css">
+              <div class="skill-info"><span>CSS3</span><span>80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item" id="skill-js">
+              <div class="skill-info"><span>JavaScript</span><span>70%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">⚙️</span> Backend & Bases de Datos
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item" id="skill-java">
+              <div class="skill-info"><span>Java</span><span>72%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="72"></div>
+              </div>
+            </div>
+            <div class="skill-item" id="skill-sql">
+              <div class="skill-info"><span>SQL</span><span>68%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="68"></div>
+              </div>
+            </div>
+            <div class="skill-item" id="skill-php">
+              <div class="skill-info"><span>PHP</span><span>55%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="55"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">🛠️</span> Herramientas
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item" id="skill-git">
+              <div class="skill-info"><span>Git & GitHub</span><span>75%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-item" id="skill-figma">
+              <div class="skill-info"><span>Figma / UI Design</span><span>65%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="65"></div>
+              </div>
+            </div>
+            <div class="skill-item" id="skill-vscode">
+              <div class="skill-info"><span>VS Code</span><span>90%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Tech badges -->
+      <div class="tech-badges reveal">
+        <div class="tech-badge" id="badge-html">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
+          </svg>
+          HTML5
+        </div>
+        <div class="tech-badge" id="badge-css">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" />
+          </svg>
+          CSS3
+        </div>
+        <div class="tech-badge" id="badge-js">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+          </svg>
+          JavaScript
+        </div>
+        <div class="tech-badge" id="badge-java">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.542 1.644-2.469 6.197-3.665 5.19-7.624M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639" />
+          </svg>
+          Java
+        </div>
+        <div class="tech-badge" id="badge-git">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M11.998 0C5.375 0 0 5.375 0 12c0 6.626 5.375 12.001 11.998 12.001C18.626 24.001 24 18.626 24 12c0-6.625-5.374-12-12.002-12zM7.002 17.505c-.738 0-1.338-.601-1.338-1.34s.6-1.338 1.338-1.338c.739 0 1.338.599 1.338 1.338s-.599 1.34-1.338 1.34zm9.502-8.75c0 2.5-1.501 3.75-3.503 3.75h-3v3.5h-2v-10h5c2.002 0 3.503 1.25 3.503 2.75zm-3.003-.25h-3.5v2.25h3.5c.738 0 1.25-.512 1.25-1.125 0-.614-.512-1.125-1.25-1.125z" />
+          </svg>
+          Git
+        </div>
+        <div class="tech-badge" id="badge-sql">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 0C8.482 0 5.17.836 3.125 2.151 1.079 3.466 0 5.082 0 6.75v10.5C0 20.574 5.373 24 12 24c6.624 0 12-3.426 12-6.75V6.75C24 3.101 18.628 0 12 0zm0 1.5c6.077 0 10.5 3.007 10.5 5.25S18.077 12 12 12C5.924 12 1.5 8.993 1.5 6.75S5.924 1.5 12 1.5zM1.5 9.217C3.38 11.01 7.455 12 12 12c4.546 0 8.62-.99 10.5-2.783v2.033C22.5 13.607 18.077 16.5 12 16.5S1.5 13.607 1.5 11.25V9.217zm0 5.25C3.38 16.26 7.455 17.25 12 17.25c4.546 0 8.62-.99 10.5-2.783v2.033C22.5 18.857 18.077 21.75 12 21.75S1.5 18.857 1.5 16.5v-2.033z" />
+          </svg>
+          SQL
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="section" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Proyectos</span>
+        <h2 id="projects-heading" class="section-title">Mis Proyectos</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card reveal" id="project-menu-app" aria-label="Proyecto UniversityMenuApp">
+          <div class="project-card-top">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="https://github.com/Cesia21bs/UniversityMenuApp" target="_blank" rel="noopener" id="link-menu-app"
+                aria-label="Ver UniversityMenuApp en GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .321.216.694.825.576C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">UniversityMenuApp</h3>
+          <p class="project-desc">Aplicación de menú universitario desarrollada para facilitar la gestión y
+            visualización del menú del comedor universitario.</p>
+          <div class="project-tags">
+            <span class="ptag">Java</span>
+            <span class="ptag">Mobile</span>
+            <span class="ptag">University</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" id="project-mantenimiento" aria-label="Proyecto MantenimientoUniversidad">
+          <div class="project-card-top">
+            <div class="project-links">
+              <a href="https://github.com/Cesia21bs/MantenimientoUniversidad" target="_blank" rel="noopener"
+                id="link-mantenimiento" aria-label="Ver MantenimientoUniversidad en GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .321.216.694.825.576C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">MantenimientoUniversidad</h3>
+          <p class="project-desc">Sistema de gestión de mantenimiento universitario para la administración y seguimiento
+            de solicitudes y equipos de la institución.</p>
+          <div class="project-tags">
+            <span class="ptag">Java</span>
+            <span class="ptag">Gestión</span>
+            <span class="ptag">Universidad</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" id="project-portales" aria-label="Proyecto Portales Web">
+          <div class="project-card-top">
+            <div class="project-links">
+              <a href="https://github.com/Arvillax/Proyecto-Portales" target="_blank" rel="noopener" id="link-portales"
+                aria-label="Ver Proyecto-Portales en GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .321.216.694.825.576C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Proyecto Portales Web</h3>
+          <p class="project-desc">Proyecto web desarrollado para la clase de portales web, integrando conceptos
+            avanzados de desarrollo y diseño en equipo.</p>
+          <div class="project-tags">
+            <span class="ptag">Web</span>
+            <span class="ptag">Team</span>
+            <span class="ptag">Portales</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="github-cta reveal">
+        <a href="https://github.com/Cesia21bs" target="_blank" rel="noopener" class="btn btn-outline"
+          id="btn-ver-github">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px">
+            <path
+              d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .321.216.694.825.576C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z" />
+          </svg>
+          Ver más en GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CONTACTO ───── -->
+  <section id="contacto" class="section section-alt" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Contacto</span>
+        <h2 id="contact-heading" class="section-title">Hablemos</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-text reveal">
+          <p>¿Tienes un proyecto en mente o quieres colaborar? ¡Estoy disponible para nuevas oportunidades y
+            conversaciones creativas!</p>
+          <div class="contact-links">
+            <a href="https://wa.me/50495970374" target="_blank" rel="noopener" class="contact-link"
+              id="contact-whatsapp">
+              <div class="contact-icon-wrap whatsapp-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">WhatsApp</div>
+                <div class="contact-value">+504 9597-0374</div>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/cesia.barrientosss/" target="_blank" rel="noopener" class="contact-link"
+              id="contact-instagram">
+              <div class="contact-icon-wrap instagram-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Instagram</div>
+                <div class="contact-value">@cesia.barrientosss</div>
+              </div>
+            </a>
+            <a href="https://github.com/Cesia21bs" target="_blank" rel="noopener" class="contact-link"
+              id="contact-github">
+              <div class="contact-icon-wrap github-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .321.216.694.825.576C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value">Cesia21bs</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <form class="contact-form reveal" id="contact-form" novalidate aria-label="Formulario de contacto">
+          <div class="form-group">
+            <label for="form-name">Nombre</label>
+            <input type="text" id="form-name" name="name" placeholder="Tu nombre" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="form-email">Correo electrónico</label>
+            <input type="email" id="form-email" name="email" placeholder="tucorreo@ejemplo.com" required
+              autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="form-message">Mensaje</label>
+            <textarea id="form-message" name="message" rows="5" placeholder="¿En qué puedo ayudarte?"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="btn-send-form">
+            Enviar mensaje
+          </button>
+          <div id="form-success" class="form-success" role="alert" aria-live="polite" hidden>
+            ✅ ¡Gracias por tu mensaje! Te responderé pronto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <p>Diseñado & Desarrollado con por <strong>Cesia Barrientos</strong></p>
+      <p class="footer-sub">© 2025 — Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
